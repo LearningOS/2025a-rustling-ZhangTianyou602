@@ -1,26 +1,15 @@
-// clippy1.rs
-//
-// The Clippy tool is a collection of lints to analyze your code so you can
-// catch common mistakes and improve your Rust code.
-//
-// For these exercises the code will fail to compile when there are clippy
-// warnings check clippy's suggestions from the output to solve the exercise.
-//
-// Execute `rustlings hint clippy1` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
-
-use std::f32;
+// 引入 f32 的常量模块（包含精确的 PI）
+use std::f32::consts::PI;
 
 fn main() {
-    let pi = 3.14f32;
+    let pi = PI; // 使用标准库的精确 π 值
     let radius = 5.00f32;
 
-    let area = pi * f32::powi(radius, 2);
+    // 直接调用 f32 类型的 powi 方法（无需全路径）
+    let area = pi * radius.powi(2);
 
     println!(
         "The area of a circle with radius {:.2} is {:.5}!",
         radius, area
-    )
+    );
 }
