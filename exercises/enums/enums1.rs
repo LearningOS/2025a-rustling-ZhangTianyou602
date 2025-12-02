@@ -1,12 +1,10 @@
-// enums1.rs
-//
-// No hints this time! ;)
-
-// I AM NOT DONE
-
 #[derive(Debug)]
 enum Message {
-    // TODO: define a few types of messages as used below
+    // 定义枚举的四个变体，均为无数据关联的单元结构体形式
+    Quit,
+    Echo,
+    Move,
+    ChangeColor,
 }
 
 fn main() {
