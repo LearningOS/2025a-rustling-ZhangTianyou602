@@ -1,18 +1,15 @@
 // if1.rs
-//
-// Execute `rustlings hint if1` or use the `hint` watch subcommand for a hint.
-
-
 pub fn bigger(a: i32, b: i32) -> i32 {
     // Complete this function to return the bigger number!
     // Do not use:
     // - another function call
     // - additional variables
 
+    // 核心逻辑：通过 if-else 条件判断直接返回较大值
     if a > b {
-        a
+        a  // a更大时返回a
     } else {
-        b
+        b  // 否则返回b（包含a==b的情况）
     }
 }
 
