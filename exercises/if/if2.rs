@@ -1,18 +1,12 @@
 // if2.rs
-//
-// Step 1: Make me compile!
-// Step 2: Get the bar_for_fuzz and default_to_baz tests passing!
-//
-// Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
-
-
 pub fn foo_if_fizz(fizzish: &str) -> &str {
+    // 条件分支逻辑：匹配不同输入返回对应字符串
     if fizzish == "fizz" {
-        "foo"
+        "foo"          // 输入"fizz"返回"foo"
     } else if fizzish == "fuzz" {
-        "bar"
+        "bar"          // 输入"fuzz"返回"bar"
     } else {
-        "baz"
+        "baz"          // 其他所有输入返回"baz"
     }
 }
 
