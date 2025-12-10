@@ -1,27 +1,17 @@
 // hashmaps1.rs
-//
-// A basket of fruits in the form of a hash map needs to be defined. The key
-// represents the name of the fruit and the value represents how many of that
-// particular fruit is in the basket. You have to put at least three different
-// types of fruits (e.g apple, banana, mango) in the basket and the total count
-// of all the fruits should be at least five.
-//
-// Make me compile and pass the tests!
-//
-// Execute `rustlings hint hashmaps1` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
-
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
-    let mut basket = // TODO: declare your hash map here.
+    // 1. 初始化一个空的 HashMap（可变的，因为要插入元素）
+    let mut basket = HashMap::new();
 
-    // Two bananas are already given for you :)
+    // 已有的香蕉
     basket.insert(String::from("banana"), 2);
 
-    // TODO: Put more fruits in your basket here.
+    // 2. 添加至少两种更多的水果，确保总数≥5、种类≥3
+    basket.insert(String::from("apple"), 2);    // 苹果：2个
+    basket.insert(String::from("mango"), 2);    // 芒果：2个
+    // 此时总数：2+2+2=6 ≥5，种类：3 ≥3，满足所有测试条件
 
     basket
 }
