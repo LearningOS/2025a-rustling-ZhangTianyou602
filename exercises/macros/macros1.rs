@@ -1,10 +1,5 @@
 // macros1.rs
-//
-// Execute `rustlings hint macros1` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
-
+// 移除 I AM NOT DONE 注释后即可正常运行
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
