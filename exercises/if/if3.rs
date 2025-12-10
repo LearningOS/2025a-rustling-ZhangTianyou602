@@ -1,9 +1,6 @@
 // if3.rs
-//
-// Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
-
-
 pub fn animal_habitat(animal: &str) -> &'static str {
+    // 第一步：将动物名称映射为数字标识符
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
@@ -15,6 +12,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
+    // 第二步：将数字标识符映射为栖息地字符串
     let habitat = if identifier == 1 {
         "Beach"
     } else if identifier == 2 {
