@@ -1,4 +1,5 @@
 // primitive_types3.rs
+
 fn main() {
     let a = [0; 1000];
 
