@@ -1,16 +1,11 @@
 // macros2.rs
-//
-// Execute `rustlings hint macros2` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
-
-fn main() {
-    my_macro!();
-}
-
+// 关键修改：将宏定义移到调用之前（Rust 要求宏必须先定义后使用）
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
     };
+}
+
+fn main() {
+    my_macro!();
 }
