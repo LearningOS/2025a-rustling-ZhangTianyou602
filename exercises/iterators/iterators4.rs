@@ -1,20 +1,9 @@
 // iterators4.rs
-//
-// Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
-
 pub fn factorial(num: u64) -> u64 {
-    // Complete this function to return the factorial of num
-    // Do not use:
-    // - return
-    // Try not to use:
-    // - imperative style loops (for, while)
-    // - additional variables
-    // For an extra challenge, don't use:
-    // - recursion
-    // Execute `rustlings hint iterators4` for hints.
+    // 核心逻辑：用迭代器的 range + fold 实现阶乘
+    // 1. (1..=num) 生成 1 到 num 的闭区间迭代器（num=0 时迭代器为空）
+    // 2. fold(1, |acc, x| acc * x) 从 1 开始累乘，空迭代器直接返回初始值 1
+    (1..=num).fold(1, |acc, x| acc * x)
 }
 
 #[cfg(test)]
