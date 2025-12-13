@@ -1,9 +1,7 @@
-// primitive_types2.rs
 fn main() {
     // Characters (`char`)
 
-    // Note the _single_ quotes, these are different from the double quotes
-    // you've been seeing around.
+    // 注意单引号，与字符串的双引号不同
     let my_first_initial = 'C';
     if my_first_initial.is_alphabetic() {
         println!("Alphabetical!");
@@ -13,9 +11,15 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-    let your_character = '@';// Finish this line like the example! What's your favorite character?
-    // Try a letter, try a number, try a special character, try a character
-    // from a different language than your own, try an emoji!
+    // 示例1：字母（输出 Alphabetical!）
+    // let your_character = '中'; 
+    // 示例2：数字（输出 Numerical!）
+    // let your_character = '9';
+    // 示例3：特殊符号（输出 Neither...）
+    // let your_character = '@';
+    // 示例4：emoji（输出 Neither...）
+    let your_character = '😜'; 
+    
     if your_character.is_alphabetic() {
         println!("Alphabetical!");
     } else if your_character.is_numeric() {
